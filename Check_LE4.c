@@ -14,14 +14,14 @@ int checkseq(int* seq,int* states);
 
 main(){
     FILE* fp;//pointer to input file
-    char filename[40];
+    char filename[40] = "seq.txt";
     int states[10000];//the possible states
     int sequence[10003];//the De Bruijn sequence to check
     int statusOK=1;
     
     //read file and store in sequence
-    printf("Filename with stored sequence: ");
-    scanf("%s",filename);
+    //printf("Filename with stored sequence: ");
+    //scanf("%s",filename);
     fp=fopen(filename,"r");
     if(fp==NULL){
 	printf("Trouble reading %s\n",filename);

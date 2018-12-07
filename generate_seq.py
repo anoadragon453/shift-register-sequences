@@ -67,8 +67,6 @@ field = 5
 period = 5**4 # 625
 z5_sequence = []
 
-# TODO: Find 000 in the sequence and shove zero in
-# DO IT FOR BOTH SEQUENCES AND THEN YOU DON'T HAVE TO DO IT FOR Z_10!
 while (len(z5_sequence) < period - 1):
     # Apply operations to our state
     new_num = (-3 * state[0] - 4 * state[1] - 4 * state[2] - state[3]) % field

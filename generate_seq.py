@@ -38,15 +38,6 @@ while (len(z2_sequence) < period):
     # Append number to the overall sequence
     z2_sequence.append(seq_value)
 
-# Insert 0 into the Z2 sequence to achieve 0000 state
-#z2_sequence = insert_zero(z2_sequence)
-'''
-for i in range(l):
-    if str(z2_sequence[i % l]) + str(z2_sequence[(i + 1) % l]) + str(z2_sequence[(i + 3) % l]) == '000':
-        z2_sequence.insert(i, 0)
-        break
-'''
-
 # Print out our sequence
 print("Z2 sequence:", z2_sequence)
 
